@@ -1,49 +1,42 @@
-# ConsoleCricket
+# Console Cricket 🏏  
 
-## Overview
+A console-based cricket game built with **C#** where you can play a quick match against a bot. Choose the number of wickets and overs, participate in a toss, and try to outscore the bot or take all its wickets to secure victory!
 
-This is a simple cricket game where you can play a quick match against a bot. The game allows you to choose the number of wickets and overs for the match. A toss decides which side bats/bowls first, and the game proceeds with batting and bowling turns. The objective is to either outscore the bot or take all its wickets before it reaches the target to secure a victory.
+## How It Works  
 
-## How to Play
-
-### 1. Clone the Repository  
-```sh
-git clone https://github.com/slalithprasad/ConsoleCricket
-cd ConsoleCricket
-```
-
-### 2. Install .NET 9 Runtime  
-Ensure you have .NET 9 runtime installed on your system. You can download it from the official [Microsoft .NET website](https://dotnet.microsoft.com/download).
-
-### 3. Build the Project  
-Run the following command in the project directory:  
-```sh
-dotnet build
-```
-
-### 4. Run the Executable  
-After building, navigate to the output directory and run the game:  
-- On Windows:  
-  ```sh
-  cd bin/Debug/net9.0
-  ConsoleCricket.exe
-  ```
-- On macOS/Linux:  
-  ```sh
-  cd bin/Debug/net9.0
-  ./ConsoleCricket
-  ```
-
-### 5. Playing the Game  
-- Enter the number of wickets (1-10).  
-- Enter the number of overs (1-20).  
-- Participate in the toss by entering 'H' (Heads) or 'T' (Tails).  
+- Enter the number of wickets (1-10) and overs (1-20).  
+- Participate in the toss by entering **'H'** (Heads) or **'T'** (Tails).  
 - If you win the toss, choose to bat or bowl first. If the bot wins, it will decide.  
-- Play your turn by entering runs (0, 1, 2, 3, 4, or 6).  
-- Try to outscore the bot before the overs run out or take all its wickets before it reaches the target.
+- Play your turn by entering runs **(0, 1, 2, 3, 4, or 6)**.  
+- The objective is to either outscore the bot or take all its wickets before it reaches the target.  
 
+## Prerequisites  
+- Download and Install [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download)
 
-## Sample Output
+## Setup  
+1. Clone the repository:  
+    ```bash
+    git clone https://github.com/slalithprasad/ConsoleCricket
+    cd ConsoleCricket
+    ```
+2. Install the required NuGet packages:  
+    ```bash
+    dotnet restore
+    ```
+
+## Running the Game  
+```bash
+dotnet run
+```
+
+## Gameplay  
+- 🎲 Enter the number of wickets (1-10) and overs (1-20).  
+- 🪙 Participate in the toss with **'H'** (Heads) or **'T'** (Tails).  
+- 🏏 If you bat, enter runs **(0, 1, 2, 3, 4, or 6)** to score.  
+- 🎳 If you bowl, enter runs **(0, 1, 2, 3, 4, or 6)** to try and get the bot out.  
+- 🎉 Outscore the bot or take all its wickets before it reaches the target to win!  
+
+## Example Gameplay  
 
 ```text
 Please enter the number of wickets for the match (enter value between 1 and 10): 2
@@ -92,4 +85,6 @@ PLAYER Wins
 ****************************
 ```
 
-Enjoy the game! 🎮🏏
+---
+
+**Happy Cricketing!** 🎉🏏
