@@ -1,7 +1,7 @@
 ﻿#region Wickets
 Console.Write("Please enter the number of wickets for the match (enter value between 1 and 10): ");
 string? numberOfWicketsString = Console.ReadLine();
-int numberOfWickets = 0;
+int numberOfWickets;
 while (!int.TryParse(numberOfWicketsString, out numberOfWickets) || !(numberOfWickets >= 1 && numberOfWickets <= 10))
 {
     Console.Write("The entered value is not valid. Please re-enter the number of wickets for the match between 1 and 10: ");
@@ -16,7 +16,7 @@ Console.WriteLine("****************************\n");
 #region Overs
 Console.Write("Please enter the number of overs for the match (enter value between 1 and 20): ");
 string? numberOfOversString = Console.ReadLine();
-int numberOfOvers = 0;
+int numberOfOvers;
 while (!int.TryParse(numberOfOversString, out numberOfOvers) || !(numberOfOvers >= 1 && numberOfOvers <= 20))
 {
     Console.Write("The entered value is not valid. Please re-enter the number of overs for the match between 1 and 20: ");
@@ -99,7 +99,7 @@ for (int i = 0; i <= numberOfBalls; i++)
     string message = firstInningsOver ? $"You are currently {currentInnings}ing and the target is {target}, please enter one of the following values ({string.Join(",", allowedValues)}): " : $"You are currently {currentInnings}ing, please enter one of the following values ({string.Join(",", allowedValues)}): ";
     Console.Write(message);
     string? playerChoiceString = Console.ReadLine();
-    int playerChoice = -1;
+    int playerChoice;
 
     while (!int.TryParse(playerChoiceString, out playerChoice) || !allowedValues.Contains(playerChoice))
     {
