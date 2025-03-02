@@ -128,13 +128,13 @@ for (int i = 0; i <= numberOfBalls; i++)
 
             if (playerOverCounter < numberOfOvers)
             {
-                if (playerOverCounter % 1.0m < 0.5m)
+                if (playerOverCounter % 1.0m == 0.5m)
                 {
-                    playerOverCounter += 0.1m;
+                    playerOverCounter += 0.5m;
                 }
                 else
                 {
-                    playerOverCounter = Math.Ceiling(playerOverCounter);
+                    playerOverCounter += 0.1m;
                 }
             }
 
@@ -182,13 +182,13 @@ for (int i = 0; i <= numberOfBalls; i++)
 
             if (botOverCounter < numberOfOvers)
             {
-                if (botOverCounter % 1.0m < 0.5m)
+                if (botOverCounter % 1.0m == 0.5m)
                 {
-                    botOverCounter += 0.1m;
+                    botOverCounter += 0.5m;
                 }
                 else
                 {
-                    botOverCounter = Math.Ceiling(botOverCounter);
+                    botOverCounter += 0.1m;
                 }
             }
 
